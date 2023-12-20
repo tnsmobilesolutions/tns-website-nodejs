@@ -19,10 +19,9 @@ const sendOtpTNSSite = async(req, res) => {
      const subject = req.body.subject || 'Empty';
      const message = req.body.message || 'Empty';
      const email = req.body.email || 'Empty';
-     const toEmail = "info@tnsmobilesolutions.com";
      const mailOptions = {
        from: process.env.smtpEmail,
-       to: "manojnathsaud@gmail.com",
+       to: process.env.sendEmailto,
        subject: `[inquiry] ${subject}`,
        text: `Name: ${name},\nEmail: ${email}\nMessage: ${message}` // Constructing text with name and message
      };
