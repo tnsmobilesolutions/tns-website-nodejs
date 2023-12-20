@@ -21,7 +21,6 @@ foodarna-error.log
 *.launch
 .settings/
 *.sublime-workspace
-.env
 
 # Visual Studio Code
 .vscode/*
