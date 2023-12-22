@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
     },
     });
 
-const sendOtpTNSSite = async(req, res) => {
+const sendEmailTNSSite = async(req, res) => {
     console.log("Entered");
     try {
      data = req.body
@@ -42,4 +42,4 @@ const sendOtpTNSSite = async(req, res) => {
      console.log('send Email error', error);
     }
    };
-   module.exports = {sendOtpTNSSite}
+   module.exports = {sendOtpTNSSite: sendEmailTNSSite}

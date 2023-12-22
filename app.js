@@ -18,8 +18,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 const corsOptions = {
-  origin: '*', // Allow requests from any origin
-  optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
+  origin: '*', 
+  optionsSuccessStatus: 200 
 };
 
 app.use(cors(corsOptions));

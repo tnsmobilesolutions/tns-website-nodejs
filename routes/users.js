@@ -25,6 +25,6 @@ let bruteforcePrevent = new ExpressBrute(store, {
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
-router.get('/sendEmail',bruteforcePrevent.prevent,allController.nodemailerController.sendOtpTNSSite);
+router.post('/sendEmail',bruteforcePrevent.prevent,allController.nodemailerController.sendOtpTNSSite);
 
 module.exports = router;
